@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url("temp.gif");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box {
+    width: 90%;
+    max-width: 750px;
+    background-color: #7f5539;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ok, .enter {
+    display: flex;
+    align-items: center;
+}
+
+.en input, .ter select {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+}
+
+.sub {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+}
+
+button:hover {
+    background-color: rgb(117, 43, 43);
+}
+
+#result {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .back {
+        height: 100%;
+    }
+
+    .box {
+        margin: 20px;
+    }
+
+    .head {
+        font-size: 1.5em;
+    }
+
+    .en, .ter {
+        margin: 20px 0;
+    }
+
+    .en input, .ter select {
+        width: 100%;
+        max-width: none;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
